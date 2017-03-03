@@ -1,0 +1,1 @@
+A creative tim esque template created for people who want to showcase their work (photography, design etc) or are looking for a landing page for their business. Feel free to download it, make changes, and use for your own website. 
