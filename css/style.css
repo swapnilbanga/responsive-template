@@ -1,0 +1,176 @@
+/*Author: Swapnil Banga*/
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 68px;
+}
+
+.title {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cover {
+    margin-top: 50px;
+    padding-top: 10%;
+}
+
+.parallax { 
+    background-image: url("../images/pexels-cover-3.jpeg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spacer {
+    height: 80px;
+}
+
+.separate {
+    width: 250px;
+    height: 22px;
+    box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.15);
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    display: block;
+}
+
+.roundImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.product:hover {
+    border: 3px solid black;
+}
+
+.btn-dark {
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.btn-dark:hover {
+    color: white;
+}
+
+#topnav {
+    background-color: black;
+}
+
+#contact { 
+    position: relative; 
+}
+
+#addressBox { 
+    position: absolute; 
+    top: 20%; 
+    left: 20px; 
+    width: 25%;
+    height: 60%;
+    background-color: #FFF;
+    z-index: 99;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer-black {
+    background-color: black;
+    margin: 0px;
+    width: 100%;
+}
+
+.nav > li > a {
+    color: #777;
+}
+
+#users > li{
+    display: inline-block;
+    padding: 0;
+    margin: 15px 15px 0px 0px;
+}
+
+.col-md-3 > i:nth-of-type(2) {
+    margin: 0px 10px 0px 10px;
+}
+
+.col-md-3 > i:hover {
+    color: #777;
+}
+
+#footer-black .navbar-nav > li > a:hover, 
+#topnav .navbar-nav > li > a:hover {
+    color: white;
+    background-color: black;
+}
+
+#footer-black .navbar-nav > li > a:focus {
+    background-color: black;
+}
+
+/*Media Queries*/
+
+@media(min-width: 801px) {
+    #map {
+    min-height: 500px;
+    width: auto;
+    }
+}
+
+@media(max-width: 800px) {
+    #map {
+    min-height: 250px;
+    width: auto;
+    }
+    #addressBox {
+        display: none;
+    }
+    .col-sm-12 {
+    margin-bottom: 25px;
+}
+}
+
+@media(max-width: 450px) {
+    #contact {
+        display: none;
+    }
+}
+
+/*Remove parallax effect on mobile*/
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
+
